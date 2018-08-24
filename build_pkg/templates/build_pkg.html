@@ -1,0 +1,65 @@
+{% extends 'basic.html' %}
+{% load static %}
+{% block links_scripts %}
+  <link rel="stylesheet" href="{% static '/css/styles.css' %}">
+  <script type="text/javascript" src="{% static 'js/build.js' %}"></script>
+{% endblock %}
+{% block content %}
+  <section>
+    <div class="main_container">
+        <div class="header_pks">
+          <span>Selecciona un paquete - {{wedding_type}}</span>
+        </div>
+        <div class="card_container">
+          <div class="form_card basic">
+            <div class="picture">
+              <img src="{% static 'images/basic.jpg' %}" alt="">
+            </div>
+            <div class="caption">
+              <span class="caption_header">Básico</span>
+              <span class="caption_price">$2000 - $4000</span>
+            </div>
+            <div class="shadow" >
+              Básico
+            </div>
+          </div>
+          <div class="form_card standard">
+            <div class="picture">
+              <img src="{% static 'images/standard.jpg' %}" alt="">
+            </div>
+            <div class="caption">
+              <span class="caption_header">Estándar</span>
+              <span class="caption_price">$4000 - $8000</span>
+            </div>
+            <div class="shadow" >
+              Estándar
+            </div>
+          </div>
+          <div class="form_card premium">
+            <div class="picture">
+                <img src="{% static 'images/premium.jpg' %}" alt="">
+            </div>
+            <div class="caption">
+              <span class="caption_header">Premium</span>
+              <span class="caption_price">$8000 - $15000</span>
+            </div>
+            <div class="shadow" >
+              Premium
+            </div>
+          </div>
+          <div class="form_card elite">
+            <div class="picture">
+              <img src="{% static 'images/elite.jpg' %}" alt="">
+            </div>
+            <div class="caption">
+              <span class="caption_header">Elite</span>
+              <span class="caption_price">+$15000</span>
+            </div>
+            <div class="shadow" >
+              Elite
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+{% endblock %}

@@ -1,0 +1,222 @@
+.main_container{
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+.register{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.form_card{
+  display: flex;
+  width: 30%;
+  height: 80%;
+  max-height: 80%;
+  border-radius: 3%;
+  box-shadow: 0 0 3px teal;
+}
+
+.form_card form {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+.form_card form .form_inner_container{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  padding: 0 10%;
+  justify-content: space-between;
+}
+
+.form_card form .form_header{
+  display: flex;
+  width: 100%;
+  /*height: 10%;*/
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 5% 0;
+
+}
+.form_header span{
+  font-family: sans-serif;
+  font-size: 1.4em;
+}
+.form_card form .form_bodies{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  height: 80%;
+}
+.form_body{
+  display: none;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+}
+.social-media-logos{
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+#fb, #ig, #tw{
+  display: flex;
+  font-size: 2em;
+  cursor: pointer;
+}
+#fb{
+  color: #3949ab;
+}
+#tw{
+  color: #81d4fa;
+}
+#ig{
+  color: black;
+}
+
+.is-showing{
+  display: flex;
+  transition: .5s all ease;
+}
+
+.form_bodies .form_body label{
+  display: flex;
+  width: 100%;
+  margin-bottom: 3%;
+  margin-top: 5%;
+}
+.form_body input{
+  display: flex;
+  background-color: transparent;
+  border-radius: 3%;
+  padding:3%;
+  border: 1px solid teal;
+}
+.form_body select{
+  display: flex;
+  background-color: #fff;
+  outline: none;
+  border-radius: 3%;
+  padding:3%;
+  vertical-align: bottom;
+  border: 1px solid teal;
+  appearance:none;
+  -moz-appearance:none;
+  -webkit-appearance:none;
+}
+
+.form_btn {
+  display: flex;
+  height: 100%;
+  width: 25%;
+  max-width: 50%;
+}
+.form_footer .form_btn button{
+  display: flex;
+  background-color: #039be5;
+  outline: none;
+  border: none;
+  border-radius: 5%;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1em;
+  justify-content: center;
+}
+.form_btn button:hover{
+  transition: .3s all ease;
+  box-shadow: 0 0 5px #000;
+}
+
+.dragzone{
+  display: flex;
+  width: 100%;
+  border: 2px dashed #ccc;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  color: #ccc;
+}
+.drag-on{
+  transition: .3s;
+  border: 3px dashed teal;
+  color: teal;
+}
+.success_reg{
+  display: none;
+
+}
+.success_reg span{
+  color: #4caf50;
+  font-size: 2.5em;
+}
+.loader {
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid #3498db;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin .5s linear infinite;
+    display: none;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.pagination{
+  display: flex;
+  flex-direction: row;
+  margin: 20px 0;
+  width: 100%;
+  justify-content: center;
+}
+.pagination div{
+  display: flex;
+  border-radius: 50%;
+  border: 1px solid #039be5;
+  height: 15px;
+  width: 15px;
+  margin:1% 2% 0 2%;
+}
+.on-page{
+  background-color: #039be5;
+  transition: .3s;
+}
+
+      .form_footer{
+        display: flex;
+        width: 100%;
+        justify-content: center ;
+        align-items: center;
+        height: 10%;
+        margin-bottom: 5%;
+        margin-top: 5%;
+      }
+        .form_btn {
+          display: flex;
+          height: 100%;
+          width: 25%;
+          max-width: 50%;
+        }
+        .form_footer .form_btn button{
+          display: flex;
+          background-color: #039be5;
+          outline: none;
+          border: none;
+          border-radius: 5%;
+          width: 100%;
+          height: 100%;
+          color: #fff;
+          cursor: pointer;
+          font-size: 1em;
+          justify-content: center;
+        }

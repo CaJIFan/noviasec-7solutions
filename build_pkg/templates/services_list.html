@@ -1,0 +1,143 @@
+{% extends 'basic.html' %}
+{% load static %}
+{% block links_scripts %}
+  <link rel="stylesheet" href="{% static 'css/services.css' %}">
+  <script type="text/javascript" src="{% static 'js/services.js' %}"></script>
+{% endblock %}
+{% block content %}
+<div class="main_container">
+  <div class="header_list">
+    <div class="pkg_id">
+      <span>Paquete {{pkg_name}}</span>
+    </div>
+  </div>
+  <div class="tabs">
+    {% for service in servicios %}
+      <div class="tab {{service}}">{{service.capitalize}}</div>
+    {% endfor %}
+      <div class="tab add">
+        <i class="fas fa-plus"></i>
+      </div>
+      <div class="void">
+
+      </div>
+  </div>
+  <div class="services">
+    <div class="service banquete on_screen" id="banquete">
+      <div class="s_container">
+        <div class="form_card">
+          <div class="picture">
+            <img src="{% static 'images/marcel_rivero.jpg' %}" alt="">
+          </div>
+          <div class="caption">
+            <span class="caption_header">Marcel Rivero</span>
+          </div>
+        </div>
+        <div class="form_card">
+          <div class="picture">
+            <img src="{% static 'images/gia_de_viver.jpg' %}" alt="">
+          </div>
+          <div class="caption">
+            <span class="caption_header">Gia de Viver</span>
+          </div>
+        </div>
+        <div class="form_card">
+          <div class="picture">
+            <img src="{% static 'images/uniko.jpg' %}" alt="">
+          </div>
+          <div class="caption">
+            <span class="caption_header">Uniko</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="service local" id="local">
+      <div class="s_container">
+        <div class="form_card">
+          <div class="picture">
+            <img src="{% static 'images/uniparkhotel.png' %}" alt="">
+          </div>
+          <div class="caption">
+            <span class="caption_header">Unipark Hotel</span>
+          </div>
+        </div>
+        <div class="form_card">
+          <div class="picture">
+            <img src="{% static 'images/ocean.png' %}" alt="">
+          </div>
+          <div class="caption">
+            <span class="caption_header">Ocean Club</span>
+          </div>
+        </div>
+        <div class="form_card">
+          <div class="picture">
+            <img src="{% static 'images/hotelpalace.png' %}" alt="">
+          </div>
+          <div class="caption">
+            <span class="caption_header">Hotel Palace</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="service sonido" id="sonido">
+      <div class="s_container">
+        <div class="form_card">
+          <div class="picture">
+            <img src="{% static 'images/armonia.png' %}" alt="">
+          </div>
+          <div class="caption">
+            <span class="caption_header">Armonía</span>
+          </div>
+        </div>
+        <div class="form_card">
+          <div class="picture">
+            <img src="{% static 'images/pacificband.png' %}" alt="">
+          </div>
+          <div class="caption">
+            <span class="caption_header">Pacific Band</span>
+          </div>
+        </div>
+        <div class="form_card">
+          <div class="picture">
+            <img src="{% static 'images/musicos.png' %}" alt="">
+          </div>
+          <div class="caption">
+            <span class="caption_header">Musicos</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="service vestuario" id="vestuario">
+      <div class="s_container">
+        <div class="form_card">
+          <div class="picture">
+            <img src="{% static 'images/marcel_rivero.jpg' %}" alt="">
+          </div>
+          <div class="caption">
+            <span class="caption_header">Marcel Rivero</span>
+          </div>
+        </div>
+        <div class="form_card">
+          <div class="picture">
+            <img src="{% static 'images/gia_de_viver.jpg' %}" alt="">
+          </div>
+          <div class="caption">
+            <span class="caption_header">Gia de Viver</span>
+          </div>
+        </div>
+        <div class="form_card">
+          <div class="picture">
+            <img src="{% static 'images/uniko.jpg' %}" alt="">
+          </div>
+          <div class="caption">
+            <span class="caption_header">Uniko</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="next_btn">
+      <button type="button" name="button">Finalizar</button>
+    </div>
+  </div>
+</div>
+{% endblock %}

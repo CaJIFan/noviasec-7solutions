@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <script type="text/javascript" src="{% static 'js/jquery.min.js' %}"></script>
+    <link rel="stylesheet" href="{% static '/css/basic.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
+    <script type="text/javascript" src="{% static 'js/main.js' %}"></script>
+    <link rel="stylesheet" href="{% static 'fonts/fontawesome/css/all.min.css' %}">
+    {% block links_scripts %}{% endblock %}
+    <title>{{title}}</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <span>Novias.ec</span>
+        <span id="slogan">El primer portal de bodas del Ecuador</span>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="{% url 'home' %}">Inicio</a></li>
+          <li><a href="#">Ideas</a></li>
+          <li><a href="#">FAQ's</a></li>
+          <li><a href="#">Contáctenos</a></li>
+        </ul>
+      </nav>
+    </header>
+    {% block content %}
+    {% endblock %}
+  </body>
+</html>

@@ -1,0 +1,113 @@
+.main_container{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+}
+
+.detail_label{
+  display: flex;
+  width: 100%;
+  height: 15%;
+  border-bottom: 1px solid #ccc;
+}
+.detail_label span{
+  display: flex;
+  height: 100%;
+  width: 100%;
+  font-size: 1.5em;
+  align-items: center;
+  padding-left:2%;
+}
+
+.detalle{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  padding-left: 2%;
+}
+.detalle .cabeceras{
+  display: flex;
+  border: 1px dashed teal;
+  padding: 5px 0;
+  width: 70%;
+  background-color: #5c6bc0;
+}
+.cabeceras span{
+  display: flex;
+  width: 25%;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: #fff;
+}
+
+.cuerpo_total{
+  display: flex;
+  width: 70%;
+  flex-direction: column;
+  border-left: 1px dashed teal;
+  border-right: 1px dashed teal;
+}
+.cuerpo_total .row{
+  display: flex;
+  width: 100%;
+  padding: 5px;
+}
+.row div span{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 3% 0;
+}
+.row div{
+  display: flex;
+  width: 25%;
+}
+
+.total_footer{
+  display: flex;
+  width: 70%;
+  justify-content: space-between;
+  border: 1px solid black;
+  align-items: center;
+  padding: 5px 0;
+}
+.total_label{
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.total_label span{
+  display: flex;
+}
+
+
+.total_value{
+    display: flex;
+    width: 25%;
+    justify-content:center;
+}
+.cotizar_btn{
+  display: flex;
+  height: 8%;
+  margin-left: 2%;
+}
+.cotizar_btn button{
+  display: flex;
+  background-color: #5c6bc0;
+  border: none;
+  height: 100%;
+  width: 15%;
+  border-radius: 1%;
+  color: #fff;
+  justify-content: center;
+}
+.cotizar_btn button:hover{
+  cursor: pointer;
+  background-color: #5c6bc0;
+}

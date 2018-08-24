@@ -1,0 +1,73 @@
+{% extends 'basic.html' %}
+{% load static %}
+{% block links_scripts %}
+<link rel="stylesheet" href="{% static '/css/reg.css' %}">
+{% endblock %}
+{% block content %}
+<div class="main_container">
+  <div class="register">
+    <div class="loader"></div>
+    <div class="success_reg">
+      <span>Gracias por registrarte</span>
+    </div>
+    <div class="form_card">
+      <form class="form" action="index.html" method="post">
+        <div class="form_inner_container">
+          <div class="form_header">
+            <span>Formulario de registro</span>
+            <div class="pagination pag-reg">
+              <div class="pag1 on-page">
+              </div>
+              <div class="pag2">
+              </div>
+              <div class="pag3">
+              </div>
+            </div>
+          </div>
+          <div class="form_bodies">
+            <div class="form_body body-1 is-showing">
+              <label for="name">Nombre de la empresa</label>
+              <input type="text" name="name" placeholder="Nombre">
+              <label for="services">Tipo de servicio</label>
+              <select class="services" name="services">
+                <option value="">Seleccione su servicio</option>
+                <option value="">Fotografía</option>
+                <option value="">Localidad</option>
+                <option value="">Banquete</option>
+                <option value="">Banda sonora</option>
+                <option value="">Decoraciones</option>
+                <option value="">Vestimenta</option>
+                <option value="">Joyería</option>
+                <option value="">Organización</option>
+              </select>
+            </div>
+            <div class="form_body body-2">
+              <label for="name">Ubicación</label>
+              <input type="text" name="name" placeholder="Danos tu ubicación">
+              <label for="email">Correo electrónico</label>
+              <input type="email" name="email" placeholder="correo@ejemplo.com">
+              <label for="name">Redes sociales</label>
+              <div class="social-media-logos">
+                <i class="fab fa-facebook-square" id="fb"></i>
+                <i class="fab fa-twitter-square" id="tw"></i>
+                <i class="fab fa-instagram" id="ig"></i>
+              </div>
+            </div>
+            <div class="form_body body-3">
+              <label for="name">Galería</label>
+              <div class="dragzone" >
+                Arrastra tus imágenes aquí
+              </div>
+            </div>
+          </div>
+          <div class="form_footer">
+            <div class="form_btn">
+              <button type="button" name="button">Siguiente</button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+{% endblock %}

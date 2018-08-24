@@ -1,0 +1,49 @@
+{% extends 'basic.html' %}
+{%  load static %}
+{% block links_scripts %}
+<link rel="stylesheet" href="{% static '/css/total.css' %}">
+{% endblock %}
+{% block content %}
+<div class="main_container">
+  <div class="detail_label">
+    <span>Detalle de paquetes</span>
+  </div>
+  <div class="detalle">
+    <div class="cabeceras">
+      <span>Tipo de paquete</span>
+      <span>Tipo de servicio</span>
+      <span>Nombre del proveedor</span>
+      <span>Precio</span>
+    </div>
+    <div class="cuerpo_total">
+      {% for  servicio in lista_servicios%}
+      <div class="row">
+        <div class="pkg_type">
+          <span>{{pkg}}</span>
+        </div>
+        <div class="serv_type">
+          <span>{{serv_type.capitalize}}</span>
+        </div>
+        <div class="serv_type">
+          <span>{{servicio}}</span>
+        </div>
+        <div class="serv_type">
+          <span>$1000.00</span>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    <div class="total_footer">
+      <div class="total_label">
+        <span>Total</span>
+      </div>
+      <div class="total_value">
+        <span>${{total}}</span>
+      </div>
+    </div>
+  </div>
+  <div class="cotizar_btn">
+    <button type="button" name="button">COTIZAR</button>
+  </div>
+</div>
+{% endblock %}

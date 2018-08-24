@@ -1,0 +1,38 @@
+{% extends 'basic.html' %}
+{% load static %}
+{% block links_scripts %}
+<link rel="stylesheet" href="{% static '/css/styles.css' %}">
+<script type="text/javascript" src="{% static 'js/wedding_type.js' %}"></script>
+{% endblock %}
+{% block content %}
+<section>
+  <div class="main_container">
+      <div class="header_pks">
+        <span>Selecciona el tipo de boda</span>
+      </div>
+      <div class="card_container">
+        <div class="form_card outdoors">
+          <div class="picture">
+            <img src="{% static 'images/outdoors.jpg' %}" alt="">
+          </div>
+          <div class="caption">
+            <span class="caption_header">Aire libre</span>
+          </div>
+          <div class="shadow" >
+            Outdoors
+          </div>
+        </div>
+        <div class="form_card indoors">
+          <div class="picture">
+            <img src="{% static 'images/indoors.jpg' %}" alt="">
+          </div>
+          <div class="caption">
+            <span class="caption_header">Bajo techo</span>
+          </div>
+          <div class="shadow" >
+            Indoors
+          </div>
+        </div>
+      </div>
+    </div>
+{% endblock %}

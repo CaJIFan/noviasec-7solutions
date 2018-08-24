@@ -1,0 +1,431 @@
+header{
+
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+
+}
+
+.frame_container{
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+  flex-direction: column;
+  height: 100%;
+}
+
+.landing-container{
+  display: flex;
+  position: relative;
+  min-height: 100%;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+}
+.img-cont{
+  display: block;
+  width: 100%;
+  height: 100%;
+  -moz-overflow: hidden;
+  -webkit-overflow: hidden;
+  overflow: hidden;
+}
+.img-blur{
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: linear-gradient(rgba(0,0,0,.8), rgba(0, 0, 0, 0.1), rgba(0,0,0,.8));
+}
+  .img-cont img{
+    display: flex;
+    width: 100%;
+    min-height: 100%;
+    height: 100%;
+    transition: .5s;
+  }
+  .sliding{
+    width: 100% !important;
+    transition: .5s;
+  }
+
+  .options{
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 20%;
+    justify-content: space-around;
+    z-index: 2;
+  }
+  .prep-boda, .reg-prov{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+  }
+  .prep-boda span, .reg-prov span{
+    display: flex;
+    color: #fff;
+    font-size: 1.3em;
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+    .prep-boda a, .reg-prov a{
+      height: 35%;
+      width: 30%;
+      color: #fff;
+      text-decoration: none;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      border-radius: 10%;
+    }
+    .prep-boda a:focus, .reg-boda a:focus{
+      outline: none;
+    }
+    .prep-boda a button:active, .reg-boda a button:active{
+      outline: none;
+      border: none;
+    }
+    .prep-boda a button, .reg-prov  a button{
+      display: flex;
+      padding: 5% 8%;
+      background-color: transparent;
+      border: 2px solid #fff;
+      border-radius: 5%;
+      width: 100%;
+      height: 100%;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      font-size: 1.2em;
+    }
+    .prep-boda a button:hover, .reg-prov a button:hover{
+      cursor: pointer;
+      background-color: #fff;
+      transition: .3s;
+      color: #000;
+    }
+    .wedding-form-container{
+      display: flex;
+      width: 100%;
+      height: 100%;
+      min-height: 100%;
+      position: relative;
+    }
+    .wedding{
+      flex-direction: row;
+      justify-content: space-between;
+      padding-top: 0;
+    }
+    .dropzone-wedding{
+      display: flex;
+      width: 60%;
+      height: 100%;
+      min-height: 100%;
+      justify-content: center;
+      align-items: center;
+    }
+    .dropzone{
+      flex-direction: column;
+      padding: 3%;
+      height: 90%;
+    }
+      .dropzone-label{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+      }
+      .dropzone-label span{
+        font-size: 1.2em;
+      }
+      .dropzone ul{
+        display: flex;
+        list-style: none;
+        height: 85%;
+        padding: 5%;
+        flex-direction: column;
+        transition: .5s;
+      }
+      .dropzone ul li{
+        display: flex;
+        padding: 3% 5%;
+        transition: .5s;
+        border-radius: 5px;
+        box-shadow: 0 0 5px #ccc;
+        margin-bottom: 8px;
+        justify-content: space-between;
+      }
+      .dropzone ul li:hover{
+        box-shadow: 0 0 6px #212121;
+        cursor: pointer;
+      }
+      .eval button{
+
+        padding: 10%;
+      }
+    .services-panel{
+      display: flex;
+      width: 40%;
+      min-height: 100%;
+      flex-direction: column;
+      height: 100%;
+      background-color: #00bcd4;
+      padding: 3% 5%;
+    }
+    .services-panel .services-header{
+      display: flex;
+      width: 100%;
+      justify-content: flex-start;
+      padding-left: 3%;
+      align-items: center;
+      flex-direction: column;
+    }
+    .services-header span{
+      display: flex;
+      font-size: 1.4em;
+      color: #fff;
+      width: 100%;
+      font-weight: bold;
+    }
+    .pagination{
+      display: flex;
+      flex-direction: row;
+      margin: 20px 0;
+      width: 100%;
+      justify-content: center;
+    }
+    .pagination div{
+      display: flex;
+      border-radius: 50%;
+      border: 1px solid #fff;
+      height: 15px;
+      width: 15px;
+      margin:1% 2% 0 2%;
+    }
+    .on-page{
+      background-color: #fff;
+      transition: .3s;
+    }
+    .fieldset{
+      display: none;
+      width:100%;
+      border: none;
+      height: 77%;
+      flex-direction: column;
+    }
+    .field-showing{
+      display: flex;
+      transition: .5s;
+    }
+    .services-panel fieldset input{
+      display: inline-block;
+      -webkit-appearance:none;
+      -moz-appearance:none;
+      position: relative;
+      appearance:none;
+      padding: 3% 5%;
+      height: 20px;
+      width: 40px;
+    }
+    .checkbox-container{
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      padding: 2% 3%;
+    }
+    .services-panel fieldset input:checked{
+      display: flex;
+      background-color: transparent;
+      position: relative;
+      border: 3px solid #fff;
+      color:#fff;
+      cursor: pointer;
+    }
+    .services-panel fieldset label{
+      display: flex;
+      color: #fff;
+      width: 100%;
+      font-size: 1.1em;
+      align-items: center;
+      padding-left: 5%;
+    }
+
+    .services-panel fieldset input, .services-panel fieldset input:checked:active {
+    	border: 3px solid #fff;
+      outline: none;
+
+    }
+    .services-panel fieldset input:checked::after{
+      	content: '\2714';
+      	position: absolute;
+      	top: 50%;
+      	left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+
+        font-size: 1.5em;
+      	color: #fff;
+        align-items: center;
+        justify-content: center;
+      }
+    .reg-form-container{
+      display: flex;
+      position: relative;
+      width: 100%;
+      min-height: 100%;
+    }
+      .main_container{
+        display: flex;
+        min-height: 100%;
+        height: 100vh;
+        width: 100%;
+        /*padding-top: 10%;*/
+      }
+      .reg-label{
+        background-color: #e57373;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .reg-label span{
+        display: flex;
+        font-size: 3em;
+        color: #f6f6f6;
+      }
+      .register, .reg-label{
+        display: flex;
+        width: 50%;
+        height: 100%;
+        min-height: 100%;
+      }
+      .pag-reg div{
+        background-color: #fff;
+        border: 1px solid #039be5;
+      }
+      .pag-reg .on-page{
+        background-color: #039be5;
+      }
+
+      .animated-out{
+        transition: 1s all ease;
+        animation: out .3s ease-in-out forwards;
+        transform: translateX(-100%);
+      }
+      .animated-in{
+        transition: 1s all ease;
+        animation: in .5s ease-in-out forwards;
+        transform: translateX(-100%);
+      }
+        .form_bodies .form_body label{
+          display: flex;
+          width: 100%;
+          margin-bottom: 3%;
+          margin-top: 5%;
+        }
+        .form_body input{
+          display: flex;
+          background-color: transparent;
+          border-radius: 3%;
+          padding:3%;
+          border: 1px solid teal;
+        }
+        .form_body select{
+          display: flex;
+          background-color: #fff;
+          outline: none;
+          border-radius: 3%;
+          padding:3%;
+          vertical-align: bottom;
+          border: 1px solid teal;
+          appearance:none;
+          -moz-appearance:none;
+          -webkit-appearance:none;
+        }
+
+        .form_btn button:hover{
+          transition: .3s all ease;
+          box-shadow: 0 0 5px #000;
+        }
+
+        .dragzone{
+          display: flex;
+          width: 100%;
+          border: 2px dashed #ccc;
+          height: 100%;
+          justify-content: center;
+          align-items: center;
+          color: #ccc;
+        }
+        .drag-on{
+          transition: .3s;
+          border: 3px dashed teal;
+          color: teal;
+        }
+
+        .arrow-up{
+          display: flex;
+          position: fixed;
+          transition: .5s;
+          opacity: 0;
+          bottom:4%;
+          right: 1%;
+          height: 15%;
+          width: 8%;
+          border-radius: 5%;
+          cursor: pointer;
+          background-color: #607d8b;
+          z-index: 100;
+        }
+        .arrow-up a {
+          text-decoration: none;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: none;
+          width: 100%;
+          height: 100%;
+        }
+        .arrow-up a:active{
+          outline: none;
+          border: none;
+        }
+          .arrow-up i{
+            display: flex;
+            color: #fff;
+            font-size: 2.2em;
+          }
+
+          .contact{
+            background-color: #66bb6a;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: column;
+          }
+          .contact .logo{
+            font-size: 2em;
+          }
+          .data{
+            flex-direction: column;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
+            height: 50%;
+          }
+          .data-contact{
+            display: flex;
+            width: 100%;
+            justify-content: space-around;
+          }
+          .contact .data span{
+            color: #fff;
+            margin: 2%;
+            font-size: 2em;
+          }
