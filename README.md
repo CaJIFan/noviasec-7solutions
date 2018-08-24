@@ -1,1 +1,0 @@
-# noviasec-7solutions
